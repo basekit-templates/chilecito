@@ -1,4 +1,3 @@
-chilecito
-=========
+Sycamore
 
-Chilecito BaseKit Template
+=====
