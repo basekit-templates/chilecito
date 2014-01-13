@@ -1,0 +1,27 @@
+
+{% extends "layout.twig" %}
+
+{% block content %}
+
+<header>
+    <div class="wrapper clearfix">
+        <div class="header-top-border"></div>
+        <div class="companyheader clearfix">
+            {{widget('logo', 'logo', {"defaultlogo": asset('images/logo.png')})|raw}}
+            {{widget('companyname', 'companyname', {"business": "El Chilecito"})|raw}}
+        </div>
+        <div class="header-bottom-border"></div>
+        {{widget('menusections', 'menusections1', {})|raw}}
+    </div><!--end wrapper clearfix-->
+</header>
+
+{{widget('menu', 'menu1', {})|raw}}
+
+<footer>
+    <div class="wrapper clearfix">
+        {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
+        {{widget('profile', 'footercolumn1socialicons', { 'profileType':'socialicons', 'socialicons':'profile'})|raw}}
+    </div>
+</footer>
+
+{% endblock %}
