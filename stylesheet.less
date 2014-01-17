@@ -374,7 +374,7 @@ header {
 
         /* SECTION AND SUB-SECTION HEADERS */
 
-            .menu-header, .menu-section-header {
+            .menu-header, .menu-subsection-header {
                 margin-bottom: 2em;
                 text-align: center;
                 h1 { 
@@ -410,7 +410,7 @@ header {
 
         /* ITEMS */
 
-            .menu-items, .menu-section-items {
+            .menu-items {
                 -moz-column-count: 2;
                 -moz-column-gap: 50px;
                 -moz-column-rule-color: rgba(0, 0, 0, 0.2);
@@ -431,7 +431,7 @@ header {
                 }
 
                 
-                li { /* menu-item and menu-section-item */
+                li { /* menu-item */
                     position: relative;
                     display: block;
                     padding-bottom: 2em;
@@ -530,68 +530,57 @@ header {
                         .menu-section-item-dietary-props {
                             float: left;
                             width: 100%;
-                            margin-top: 5px;
+                            margin-top: 10px;
                             padding: 0;
                             .dietary-icon {
-                                background-color: @color-swatch6;
-                                width: 25px;
+                                background-color: @color-swatch5;
+                                width: auto;
                                 height: 25px;
                                 border: 0;
-                                -webkit-border-radius: 100px;
-                                -moz-border-radius: 100px;
-                                border-radius: 100px;
-                                background-repeat: no-repeat;
-                                background-size: 19px;
-                                background-position: center;
-                                display: inline-block;
-                            }
-                            .vegetarian-icon {
-                                &:after { 
-                                content: "v";
+                                -webkit-border-radius: 5px;
+                                -moz-border-radius: 5px;
+                                border-radius: 5px;
                                 font-family:@font-swatch5-font-family;
                                 font-size:@font-swatch5-font-size;
-                                padding-left: 8px;
                                 display: block;
                                 z-index: 9999999;
                                 color: @color-swatch1;
+                                float: left;
+                                margin-right: 5px;
+                            }
+                            .vegetarian-icon {
+                                &:after { 
+                                content: "veggie";
+                                padding: 7px;
+                                }
+                            }
+                            .vegan-icon {
+                                &:after { 
+                                content: "vegan";
+                                padding: 7px;
                                 }
                             }
                             .glutenFree-icon {
                                 &:after { 
                                 content: "gf";
-                                font-family:@font-swatch5-font-family;
-                                font-size:@font-swatch5-font-size;
-                                padding-left: 5px;
-                                display: block;
-                                z-index: 9999999;
-                                color: @color-swatch1;
+                                padding: 7px;
                                 }
                             }
                             .nutFree-icon {
                                 &:after { 
                                 content: "nf";
-                                font-family:@font-swatch5-font-family;
-                                font-size:@font-swatch5-font-size;
-                                padding-left: 5px;
-                                display: block;
-                                z-index: 9999999;
-                                color: @color-swatch1;
+                                padding: 7px;
                                 }
                               }
                             .dairyFree-icon {
                                 &:after { 
                                 content: "df";
-                                font-family:@font-swatch5-font-family;
-                                font-size:@font-swatch5-font-size;
-                                padding-left: 5px;
-                                display: block;
-                                z-index: 9999999;
-                                color: @color-swatch1;
+                                padding: 7px;
                                 }
                               }
-                        } /* end menu-section-item-dietary-props */                        
+                        } /* end menu-section-item-dietary-props */                          
 
-                        .menu-item-description, .menu-section-item-description {
+                        .menu-item-description, .menu-subsection-item-description {
                             margin-bottom: 0.5em;
                         }
 
@@ -601,7 +590,7 @@ header {
 
             } /* end ol */  
 
-             .menu-section.menu-item-promoted { /* PROMOTED SUB-SECTION: ol.menu-subsection > li.menu-section.menu-item-promoted */  
+             .menu-subsection .menu-subsection-promoted { /* PROMOTED SUB-SECTION */ 
                 border: 2px solid @color-swatch6;
                 padding: 0 2em 0;
                 margin-bottom: 2em;
@@ -618,7 +607,7 @@ header {
                 @media @mobile {
                     padding: 0 2em 0;
                 }
-                .menu-section-header {
+                .menu-subsection-header {
                     margin: 20px 0;
                 }
             } /* end PROMOTED SUB-SECTION */
