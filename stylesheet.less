@@ -450,6 +450,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     .main {
         width: 100%;
         margin: 0 auto;
+        padding-top: 0;
         text-align: center;
         display: none;
         &.selected {
@@ -467,7 +468,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         /* MENU-HEADER AND SUB-SECTION HEADER */
 
             .menu-header, .menu-subsection-header {
-                margin-bottom: 2em;
+                margin-bottom: 3em;
                 text-align: center;
                 h1 { 
                     font-family:@font-swatch1-font-family;
@@ -555,6 +556,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                         padding-bottom: 1.5em;
                     }
                     &.menu-item-promoted {
+                        display: block;
                         background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,1%)), 0.5); 
                         padding: 1.5em 1em 0em 1em;
                         margin-bottom: 2.5em;
