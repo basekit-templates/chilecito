@@ -1,58 +1,58 @@
 {
     "name":"El Chilecito",
-    "thumbnail":"sycamore.png",
-    "screenshot":"sycamore.png",
+    "thumbnail":"chilecito.png",
+    "screenshot":"chilecito.png",
     "tags": {
-    "en": ["minimal", "clean", "photography", "vintage", "modern", "dark", "studio", "website", "creative", "elegant", "professional", "unique", "media", "sans-serif"],
-    "es": ["minimalista", "limpio", "fotografico", "vintage", "moderno", "oscuro", "estudio", "website", "creativo", "elegante", "profesional", "unico", "comunicacion", "sans-serif"],
-    "br": ["minimalista", "limpo", "fotografia", "vintage", "moderno", "escuro", "estúdio", "website", "criativo", "elegante", "profissional", "único", "mídia", "sans-serif"]
+    "en": ["menu", "cafe", "bar", "restaurant"],
+    "es": ["menú", "cafetería", "bar", "restaurante"],
+    "br": ["menu", "cafeteria", "bar", "restaurante"]
     },
     "colorSwatches":
     {
         "Swatch 1": {
             "color1":"#f3f1eb",
             "color2":"#9fa65e",
-            "color3":"#f8ba6e",
+            "color3":"#E1953A",
+            "color4":"#ee535a",
+            "color5":"#5f413a",
+            "color6":"#5f413a",
+            "color7":"#f8ba6e"
+        },
+        "Swatch 2": {
+            "color1":"#f3f1eb",
+            "color2":"#9fa65e",
+            "color3":"#9fa65e",
+            "color4":"#5f413a",
+            "color5":"#5f413a",
+            "color6":"#5f413a",
+            "color7":"#f8ba6e"
+        },
+        "Swatch 3": {
+            "color1":"#f3f1eb",
+            "color2":"#5f413a",
+            "color3":"#7ebdc6",
+            "color4":"#55929B",
+            "color5":"#5f413a",
+            "color6":"#5f413a",
+            "color7":"#CEDCDE"
+        },
+        "Swatch 4": {
+            "color1":"#f3f1eb",
+            "color2":"#7ebdc6",
+            "color3":"#ee535a",
             "color4":"#ee535a",
             "color5":"#5f413a",
             "color6":"#5f413a",
             "color7":"#7ebdc6"
         },
-        "Swatch 2": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#09d4b5",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
-        },
-        "Swatch 3": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#f3a41c",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
-        },
-        "Swatch 4": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#3b3b3b",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
-        },
         "Swatch 5": {
-            "color1":"#ffffff",
-            "color2":"#72d0eb",
-            "color3":"#9553d9",
-            "color4":"#2f353e",
-            "color5":"#b4bec7",
-            "color6":"#434f5b",
-            "color7":"#ffffff"
+            "color1":"#f3f1eb",
+            "color2":"#5f413a",
+            "color3":"#5f413a",
+            "color4":"#5f413a",
+            "color5":"#5f413a",
+            "color6":"#5f413a",
+            "color7":"#f8ba6e"
         }
     },
     "fontSwatch": {

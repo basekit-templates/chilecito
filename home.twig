@@ -3,7 +3,10 @@
 
 {% block content %}
 
-<header>
+{% if pages|length > 1 %}
+{{widget('extendednavigation', 'navigationheader', {})|raw}}
+{% endif %}
+<header class="bk-header">
     <div class="wrapper clearfix">
         <div class="header-top-border"></div>
         <div class="companyheader clearfix">
@@ -15,12 +18,14 @@
     </div><!--end wrapper clearfix-->
 </header>
 
-{{widget('menu', 'menu1', {})|raw}}
 
-<footer>
+<div class="main wrapper clearfix">
+{{widget('menu', 'menu1', {})|raw}}
+</div>
+
+<footer class="bk-footer">
     <div class="wrapper clearfix">
         {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
-
     </div>
 </footer>
 
