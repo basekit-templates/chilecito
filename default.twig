@@ -2,6 +2,7 @@
 
 {% block content %}
 
+<div class="bk-pt-default">
 
 {{widget('extendednavigation', 'navigationheader', {})|raw}}
 
@@ -25,5 +26,7 @@
         {{widget('content', 'footercolumn1content', {"content":"<p>Lorem Ipsum Dolor</p>"})|raw}}
     </div>
 </footer>
+
+</div>
 
 {% endblock %}
