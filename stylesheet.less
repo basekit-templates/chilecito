@@ -549,7 +549,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                 
                 li { /* menu-item */
                     position: relative;
-                    display: block;
+                    display: inline-block;
                     padding-bottom: 2em;
                     @media @mobile { 
                         margin-bottom: 1.5em;
@@ -584,16 +584,18 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
 
                         h3 { /* menu-item-name */  
                             padding: 0 8px 0 0;
-                            float: left;
                         }
-                        img { /* menu-item-image */
-                            display: none;
-                            border: none;
+                        .menu-item-image-wrap {
+                            background-size:cover;
+                            background-repeat: no-repeat;
+                            height: 200px;
+                            background-position: center;
                             -webkit-border-radius: 5px;
                             -moz-border-radius: 5px;
                             border-radius: 5px;
-                            width: 100%;
-                            margin: 15px 0;
+                            img {
+                                display: none;
+                            }
                         }
                         .menu-item-price p {   /* standard-price */
                             font-family:@font-swatch3-font-family;
