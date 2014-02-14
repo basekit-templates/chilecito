@@ -668,6 +668,9 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                                 margin-top: 0px;
                                 padding: 0 7px;
                             }
+                            .not-spicy-icon {
+                                display: none;
+                            }
                            
                         } /* end menu-section-item-dietary-props */                          
 
@@ -760,6 +763,18 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
     color: @color-swatch4;
 }
 
+/* ===============================
+  DIVIDER WIDGET
+   =============================== */
+
+hr {
+    &.line {
+        background-color: transparent;
+        height: 1px;
+        border-top: 1px dotted lighten(@color-swatch2,10%);
+    }
+}
+
 
 
 /* ===============================
@@ -834,10 +849,20 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
             -webkit-border-radius: 4px;
             -moz-border-radius: 4px;
             border-radius: 4px;
+            left: 45%;
+            top: 43%;
             &:after {
                 color: #fff;
                 letter-spacing: -4px;
                 top: 2px;
+            }
+            @media @mobile {
+                width: 40px;
+                height: 40px;
+                &:after {
+                    font-size: 15px;
+                    line-height: 36px;
+                }
             }
         }
     }
@@ -855,6 +880,29 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
         }
     }
 }
+
+/* ===============================
+  IMAGE WIDGET
+   =============================== */
+
+.widget.image {
+    .image-title, .image-description {
+    color: @font-swatch5-color;
+    }
+}
+
+/* ===============================
+   BLOCK QUOTE
+  =============================== */
+
+  blockquote {
+    background-color: transparent;
+    margin: 20px;
+    &:before {
+        color: @color-swatch3;
+    }
+  }
+
 
 /* ===============================
   BLOG
