@@ -428,7 +428,7 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                         padding-left: 10px;
                         position: absolute;
                         color: @color-swatch4;
-                        @media @mobile {
+                        @media only screen and (max-width: 550px) {
                             display: none;
                         }
                     }
@@ -508,43 +508,6 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                     position: relative;
                     padding: 0;
                     text-align: left;
-
-                    -webkit-column-count: 2;
-                    -webkit-column-gap: 4em;
-                    -webkit-column-rule-color:  rgba(0, 0, 0, 0.2);
-                    -webkit-column-rule-style: dotted;
-                    -webkit-column-rule-width:  1px;
-
-                    -moz-column-count: 2;
-                    -moz-column-gap: 4em; 
-                    -moz-column-rule-color: rgba(0, 0, 0, 0.2);
-                    -moz-column-rule-style:  dotted;
-                    -moz-column-rule-width:  1px;
-
-                    column-count: 2;
-                    column-gap: 4em;
-                    column-rule-color:  rgba(0, 0, 0, 0.2);
-                    column-rule-style: dotted;
-                    column-rule-width:  1px;
-
-                    > * {
-                        break-inside: avoid;
-                        -webkit-column-break-inside: avoid;
-                        -moz-column-break-inside: avoid;
-                        -ms-column-break-inside: avoid;
-                        -o-column-break-inside: avoid;
-                    }
-                    @media only screen and (max-width: 550px) {
-                        -webkit-column-count: 1;
-                        -moz-column-count: 1;
-                        column-count: 1;
-                    }
-                    &.odd.bk1-columns {
-                        -webkit-column-count: 1;
-                        -moz-column-count: 1;
-                        column-count: 1;
-                    }
-
                 
                 li { /* menu-item */
                     position: relative;
@@ -556,10 +519,11 @@ body.edit .widget.navigation, body.edit .widget.extendednavigation {
                         padding-bottom: 1.5em;
                     }
                     &.menu-item-promoted {
-                        display: block;
+                        display: inline-block;
                         background-color: hsla(hue(@color-swatch7), saturation(@color-swatch7), lightness(lighten(@color-swatch7,1%)), 0.5); 
                         padding: 1.5em 1em 0em 1em;
                         margin-bottom: 2.5em;
+                        margin-top: 20px;
                         border: none;
                         -webkit-border-radius: 10px;
                         -moz-border-radius: 10px;
