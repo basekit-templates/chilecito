@@ -2,6 +2,7 @@
     "name":"El Chilecito",
     "thumbnail":"chilecito.png",
     "screenshot":"chilecito.png",
+    "templateType":"menu",
     "tags": {
     "en": ["menu", "cafe", "bar", "restaurant"],
     "es": ["menú", "cafetería", "bar", "restaurante"],
